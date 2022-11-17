@@ -137,7 +137,7 @@ section
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/images/elder_scrolls.jpg);
+    background: url(./images/elder_scrolls.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
