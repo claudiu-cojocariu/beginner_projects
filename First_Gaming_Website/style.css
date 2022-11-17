@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* Design-ul "toolbar-ului" */
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: #d3234f;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header .logo
+{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header .logo span
+{
+    color: #ff1493;
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+   position:  relative;
+   list-style: none;
+}
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin:  0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a
+{
+    color: #111;
+}
+header.sticky ul li a:hover
+{
+    color: #999;
+}
+
+header a.btn
+{
+    position: relative;
+    font-size: 1em;
+    color: #fff;
+    background: #1F1F1F;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 19px;
+    transition: 0.5s;
+}
+header a.btn
+{
+    position: relative;
+    font-size: 1em;
+    color: #fff;
+    background: #1F1F1F;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 19px;
+    transition: 0.5s;
+}
+header a.btn:hover
+{
+    letter-spacing: 6px;
+}
+header a.btn:hover
+{
+    letter-spacing: 6px;
+}
+header.sticky .btn
+{
+    color: #fff;
+}
+
+
+
+
+
+/* Sfarsit Design "toolbar"*/ 
+
+
+
+
+/* Design-ul Interfetei */
+section
+{
+    padding: 100px;
+}
+.interface
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/elder_scrolls.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.interface .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.interface .content h5
+{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.interface .content h1
+{
+    color: #fff;
+    font-size: 5em;
+    font-weight: 700;
+}
+.interface .content .btn
+{
+    font-size: 1em;
+    color: #1F1F1F;
+    background: #f8f8f8;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 19px;
+    transition: 0.5s;
+}
+.interface .content .btn:hover
+{
+    letter-spacing: 6px;
+}
+/* The Other Games */
+.my-top-games{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+.my-top-games li
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-top-games li
+{
+    position: relative;
+    margin-right: 20px;
+    transform: scale(0.5);
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #fff;
+}
+
+/*Sfarsit The Other Games */
+
+/* Sfarsit Design-ul Interfatei */
+
