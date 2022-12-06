@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <title>Read More Read Less Button</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="icon">
+                    <img src="img1.png" alt="icon">
+                </div>
+                <div class="content">
+                    <h3>Web & Mobile Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aliquid ipsa? Id, laborum,
+                        cumque nihil sequi iste sapiente nostrum quisquam deserunt vitae ullam debitis libero 
+                        voluptatum recusandae beatae, voluptates culpa!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quos minima incidunt culpa porro 
+                        molestiae minus neque deserunt autem laboriosam voluptatem perferendis corrupti officiis sit nesciunt quod,
+                        accusamus rem dolor?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe distinctio animi maiores ad dolores quisquam deleniti.
+                        Odit at quod libero quis doloremque commodi deleniti est maxime sint, quam nihil quasi?
+                    </p>
+                </div>
+                <a class="more"></a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="img1.png" alt="icon">
+                </div>
+                <div class="content">
+                    <h3>Web & Mobile Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aliquid ipsa? Id, laborum,
+                        cumque nihil sequi iste sapiente nostrum quisquam deserunt vitae ullam debitis libero 
+                        voluptatum recusandae beatae, voluptates culpa!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quos minima incidunt culpa porro 
+                        molestiae minus neque deserunt autem laboriosam voluptatem perferendis corrupti officiis sit nesciunt quod,
+                        accusamus rem dolor?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe distinctio animi maiores ad dolores quisquam deleniti.
+                        Odit at quod libero quis doloremque commodi deleniti est maxime sint, quam nihil quasi?
+                    </p>
+                </div>
+                <a class="more"></a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="img1.png" alt="icon">
+                </div>
+                <div class="content">
+                    <h3>Web & Mobile Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aliquid ipsa? Id, laborum,
+                        cumque nihil sequi iste sapiente nostrum quisquam deserunt vitae ullam debitis libero 
+                        voluptatum recusandae beatae, voluptates culpa!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quos minima incidunt culpa porro 
+                        molestiae minus neque deserunt autem laboriosam voluptatem perferendis corrupti officiis sit nesciunt quod,
+                        accusamus rem dolor?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe distinctio animi maiores ad dolores quisquam deleniti.
+                        Odit at quod libero quis doloremque commodi deleniti est maxime sint, quam nihil quasi?
+                    </p>
+                </div>
+                <a class="more"></a>
+            </div>
+        </div>
+        <script>
+            let more = document.querySelectorAll('.more');
+            for (let i = 0; i<more.length; i++){
+                more[i].addEventListener('click', function(){
+                    more[i].parentNode.classList.toggle('active')
+                })
+            }
+        </script>
+    </body>
+</html>
