@@ -83,8 +83,33 @@ section
     bottom: 5px;
     background: #41c1fb;
     border-bottom-left-radius: 150px;
-    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
     filter: drop-shadow(0 0 80px #41c1fb);
+    transform-origin: top center;
+    animation: animate 5s linear infinite;
+}
+@keyframes animateLiquid
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    25%
+    {
+        transform: rotate(-20deg);
+    }
+    50%
+    {
+        transform: rotate(0deg);
+    }
+    75%
+    {
+        transform: rotate(20deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
 }
 .liquid::before
 {
