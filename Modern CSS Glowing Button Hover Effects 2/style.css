@@ -12,6 +12,8 @@ body
     align-items: center;
     min-height: 100vh;
     background: #27282c;
+    flex-direction: column;
+    gap: 60px;
 }
 a
 {
@@ -28,11 +30,14 @@ a
 a:hover
 {
     letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
 }
 a::before
 {
     content: '';
- position: absolute;
+    position: absolute;
     inset: 2px; 
     background: #27282c;
 }
@@ -55,7 +60,7 @@ a i::before
     left: 80%;
     width: 10px;
     height: 5px;
-    border: 2px solid #fff;
+    border: 2px solid var(--clr);
     background: #27282c;
     transform: translateX(-50%);
     transition: 0.5s;
@@ -74,8 +79,9 @@ a i::after
     left: 20%;
     width: 10px;
     height: 5px;
-    border: 2px solid #fff;
+    border: 2px solid var(--clr);
     background: #27282c;
+    transform: translateX(-50%);
     transition: 0.5s;
 }
 a:hover i::after
