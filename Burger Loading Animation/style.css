@@ -1,0 +1,42 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    background-color: lightgoldenrodyellow;
+}
+
+.burger{
+   width:  30rem;
+   background: white;
+   height: 30rem;
+   transform: translate(-50%, -50%);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}
+
+.burger>span
+{
+    display: block;
+    
+}
+.bun
+{
+    background: #eccd93;
+    width: 16rem;
+}
+
+.top
+{
+    height: 7rem;
+    border-radius: 10rem 10rem .5rem .5rem;
+}
