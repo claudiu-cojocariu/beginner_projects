@@ -14,20 +14,31 @@ body
     background-color: lightgoldenrodyellow;
 }
 
-.burger{
+.burger
+{
    width:  30rem;
-   background: white;
-   height: 30rem;
+  /* background: white;
+   height: 30rem; */
    transform: translate(-50%, -50%);
    position: absolute;
    top: 50%;
    left: 50%;
+   animation: animate 10s infine ease-in-out;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        top: -50%;
+    }
+    100%
 }
 
 .burger>span
 {
     display: block;
-    
+    margin: 0 auto;
 }
 .bun
 {
@@ -39,4 +50,55 @@ body
 {
     height: 7rem;
     border-radius: 10rem 10rem .5rem .5rem;
+}
+
+.onions
+{
+    width: 13rem;
+    height: 1rem;
+}
+
+.slice
+{
+    background-color: #e7574a;
+    width: 4rem;
+    height: 1rem;
+    display: inline-block;
+}
+
+.cucumber
+{
+    height: 1rem;
+    width: 16rem;
+    background-color: #005a00;
+}
+
+.leaf
+{
+    height: 1rem;
+    width: 18rem;
+    border: 1rem;
+    background-color: #0fb50f;
+}
+.cheese
+{
+    height: 2rem;
+    width: 16rem;
+    background-color: #ffcc33;
+    clip-path: polygon(100% 0%, 50% 100%, 0 0, 0 0);
+    position: absolute;
+    left: 7rem;
+}
+.patty
+{
+    width: 18rem;
+    height: 3rem;
+    background-color: #7b5d04;
+    border-radius: 3rem;
+}
+
+.bottom
+{
+    border-radius: 1rem 1rem 10rem 10rem;
+    height: 3rem;
 }
