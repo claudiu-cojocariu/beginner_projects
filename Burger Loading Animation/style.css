@@ -23,7 +23,7 @@ body
    position: absolute;
    top: 50%;
    left: 50%;
-   animation: animate 10s infine ease-in-out;
+   animation: animate 5s infine ease-in-out;
 }
 
 @keyframes animate 
@@ -32,7 +32,42 @@ body
     {
         top: -50%;
     }
+    10%
+    {
+        top: 50%;
+    }
+    20%
+    {
+        transform: translate(-50%, -50%) translateY(3rem);
+    }
+    30%
+    {
+        transform: translate(-50%, -50%) translateY(0rem);
+    }
+    40%
+    {
+        transform: translate(-50%, -50%) translateY(0rem);
+    }
+    50%
+    {
+        transform: translate(-50%, -50%) translateY(3rem);
+    }
+    70%
+    {
+        transform: translate(-50%, -50%) translateY(0rem);
+    }
+    80%
+    {
+        transform: translate(-50%, -50%) translateY(3rem);
+    }
+    90%
+    {
+        top: 50%;
+    }
     100%
+    {
+        top: -50%;
+    }
 }
 
 .burger>span
@@ -64,6 +99,7 @@ body
     width: 4rem;
     height: 1rem;
     display: inline-block;
+    margin: 0 1rem;
 }
 
 .cucumber
