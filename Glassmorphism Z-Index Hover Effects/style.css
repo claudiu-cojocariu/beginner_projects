@@ -90,6 +90,16 @@ ul li a
     z-index: 1;
     box-shadow: 0 5px 45px rgba(0,0,0,0.1);
     text-decoration: none;
+    overflow: hidden;
+    transition: top 0.5s, z-index 0s, transform 0.5s;
+    transition-delay: 0.5s 0.5s 0s;
+}
+ul li a:hover
+{
+    transition-delay: 0s,0.5s 0.5s;
+    top: -50px;
+    transform: translateY(50px);
+    z-index: 11;
 }
 ul li a:before
 {
@@ -97,4 +107,13 @@ ul li a:before
     position: absolute;
     top: 0;
     left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.5s;
+}
+ul li a:hover:before
+{
+    transform: skewX(45deg) translatateX(-150px);
 }
