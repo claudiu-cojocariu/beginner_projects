@@ -55,3 +55,39 @@ section::after
     justify-content: center;
     align-items: center;
 }
+#dycalendar
+{
+    width: 100%;
+    padding: 20px;
+}
+#dyecalendar table
+{
+    width: 100%;
+    margin-top: 40px;
+    border-spacing: 5px;
+}
+#dycalendar table tr:nth-child(1) td
+{
+    background: #fff;
+    color: #111;
+    border-radius: 4px;
+    font-weight: 600;
+}
+#dylecalendar table td
+{
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#dylecalendar table td:hover 
+{
+    background: #fff;
+    color: #111 !important;
+}
+.dycalendar-month-container .dycalendar-today-date, 
+dycalendar-month-container .dycalendar-target-date
+{
+    background: #fff;
+    color: #111 !important;
+}
