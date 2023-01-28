@@ -54,13 +54,14 @@
                 </li>    
             </ul>     
         </div>
-        <div class="toggle"></div>
-        <script type="text/javascript"></script>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <script type="text/javascript">
         function toggleMenu(){
-            let navigation = document.querySelector('.navigation')
+            let navigation = document.querySelector('.navigation');
+            let toggle = document.querySelector('.toggle');
             navigation.classList.toggle('active');
+            toggle.classList.toggle('active');
         }
-        }
-        </div>
+        </script>
     </body>
 </html>
