@@ -12,6 +12,16 @@ body
     min-height: 100vh;
     background:  #222;
 }
+body::before
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#08ff12, #0791ff);
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
 .circle
 {
     position: relative;
@@ -39,4 +49,26 @@ body
     background: linear-gradient(0deg,transparent,#fff);
     transform-origin: bottom;
     animation: animateNiddles 20s steps(60) infinite;
+}
+.circle::after
+{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 130px;
+    border-radius: 2px;
+    background: linear-gradient(0deg, transparent, #fff);
+    transform-origin: bottom;
+    animation: animateNiddles 120s steps(60) infinite;
+}
+@keyframes animateNiddles
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
 }
