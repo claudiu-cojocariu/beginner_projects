@@ -49,9 +49,10 @@ body
     justify-content: center;
     align-items: center;
 }
-.container .card .box:hover{
+.container .card .box:hover
+{
     transform: translateY(-50px);
-    box-shadow: 0 20px 70px rgba(0,0,0,0.5);
+    box-shadow: 0 40px 70px rgba(0,0,0,0.5);
 }
 .container .card .box .content
 {
@@ -63,4 +64,11 @@ body
     position: absolute;
     top: -10px;
     right: 30px;
+    font-size: 8em;
+    color: rgba(255,255,255,0.05);
+}
+.container .card .box .content h3
+{
+    color: rgba(255,255,255,0.05);
+    font-size: 1.8em;
 }
