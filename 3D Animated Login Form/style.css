@@ -60,14 +60,35 @@ body
     height: 100%;
     background: #eee;
 }
-.container .box .shadow::before
+.container .box .shadow::after
 {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 120%;
-    height: 240%;
+    bottom: -200;
+    left: calc(100% + 80px);
+    width: 100%;
+    height: 200%;
     background: linear-gradient(rgba(0,0,0,0.075),transparent);
     transform: skewX(45deg);
+}
+.cover
+{
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: #cfd1e1;
+    z-index: 10;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#dbdae1,#a3aaba);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0.0.0.0.1),
+    20px 10px 20px rgba(0.0.0.0.1),
+    50px 50px 80px rgba(0,0,0,0.1);
 }
