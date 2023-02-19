@@ -92,4 +92,72 @@ body
     20px 10px 20px rgba(0.0.0.0.1),
     50px 50px 80px rgba(0,0,0,0.25),
     inset 3px 3px 2px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .form
+{
+    position: relative;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo
+{
+    width: 70px;
+    height: 70px;
+    background: #444;
+    color: #fff;
+    font-size: 1.75em;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.content .form h2
+{
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 20px;
+}
+.content .form .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.content .form .inputBox input
+{
+    position: relative;
+    width: 100%;
+    padding: 10px 0 10px 25px;
+    font-size: 1.25em;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 3px solid  #444;
+    outline: none;
+    color: #444;
+}
+.content .form .inputBox i
+{
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    font-size: 1.25em;
+    color: #444;
+}
+.content .form .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 10px 0 10px 25px;
+    font-size: 1.25em;
+    pointer-events: none;
+    color: #444;
+    transition: 0.5s;
 }
