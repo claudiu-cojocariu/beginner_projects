@@ -161,3 +161,35 @@ body
     color: #444;
     transition: 0.5s;
 }
+.content .form .inputBox input:focus ~ span,
+.content .form .inputBox input:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size: 0.9em;
+    background: #444;
+    color: #fff;
+    padding: 2px 4px;
+}
+.content .form .links
+{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .form .links a
+{
+    color: #444;
+    text-decoration: none;
+}
+.content .form .inputBox input[type="submit"]
+{
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
+.content .form .inputBox input[type="submit"]:hover
+{
+    background: #333;
+}
