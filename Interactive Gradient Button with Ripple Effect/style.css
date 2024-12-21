@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+}
+
+.gradient-btn {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border-radius: 30px;
+    outline: none;
+    transition: transform 0.2s ease;
+}
+
+.gradient-btn:hover {
+    transform: scale(1.1);
+}
+
+.gradient-btn span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    animation: rippleEffect 0.6s linear;
+}
+
+@keyframes rippleEffect {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.7;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
